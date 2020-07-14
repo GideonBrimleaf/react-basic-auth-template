@@ -6,6 +6,7 @@ import Login from './components/Login'
 import Home from './components/Home'
 import SignUp from './components/SignUp'
 import UserProfile from './components/UserProfile'
+import PrivateRoute from './components/PrivateRoute' 
 
 function App() {
   return (
@@ -13,8 +14,8 @@ function App() {
       <AuthProvider>
           <Router>
             <Switch>
-            <Route exact path="/" render={() => <Home message="Hello from the home page!" />} />
-            <Route path="/user/:userId" render={(matchProps) => <UserProfile {...matchProps} profileText="Welcome to your profile" />} />
+            <PrivateRoute exact path="/" component={Home} componentProps={{ message:"Hello from the home page!" }} /> { /*NEW!*/ }
+            <PrivateRoute path="/user/:userId" component={UserProfile} componentProps={{ profileText:"Welcome to your profile" }} /> { /*NEW!*/ }
             <Route exact path="/login" component={Login} /> 
             <Route exact path="/signup" component={SignUp} /> 
             </Switch> 
