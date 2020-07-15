@@ -1,7 +1,7 @@
 # Basic React App with React Router and Firebase Authentication
 ----
 
-This project is a sample React app built with [create-react-app](https://create-react-app.dev/) using [React Router](https://reactrouter.com/web/guides/quick-start) and [Google Firebase Authentication](https://firebase.google.com/docs/auth).  This is a demo project running alongside [this blog post](). 
+This project is a sample React app built with [create-react-app](https://create-react-app.dev/) using [React Router](https://reactrouter.com/web/guides/quick-start) and [Google Firebase Authentication](https://firebase.google.com/docs/auth).  This is a demo project running alongside [this blog post](https://gideonbrimleaf.github.io/2020/07/14/passing-props-to-protected-react-components.html). 
 
 ### Dependencies
 
